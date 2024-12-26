@@ -1,5 +1,8 @@
 # Music Helper
 
+![image](https://github.com/user-attachments/assets/cfbe7461-6378-4244-978c-15eb27e94349)
+
+
 ## Requisitos mínimos
 - JRE (Java Runtime Environment) 17 - Se o objetivo for apenas executar o programa
 - JDK (Java Development Kit) 17 - Se desejar compilar ou modificar o código
