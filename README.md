@@ -17,9 +17,6 @@
 
 
 ## Próximas melhorias
-    - Bugs: 
-    Ao clicar com o mouse, as teclas param de funcionar
-    A opção de space ainda aparece na UI, mesmo após exclusão da funcionalidade
     - Springboot: 
     Se o projeto crescer usar, springboot para controlar a injeção de dependências.
     - Organização: 
