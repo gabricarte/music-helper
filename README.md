@@ -18,6 +18,7 @@
 
 ## Próximas melhorias
     - Springboot: 
-    Se o projeto crescer usar, springboot para controlar a injeção de dependências.
+    Se o projeto crescer, usar springboot para controlar a injeção de dependências.
+    - Escrever testes unitários
     - Organização: 
     Organizar o código da classe Frame melhor. 
