@@ -27,6 +27,8 @@ public class Frame extends JFrame {
         setScreen();
         setComponents();
         setKeyListener(); // Adicionar o KeyListener
+        setFocusable(true);  // Garantir que o Frame seja focável
+        requestFocusInWindow(); // Solicitar o foco para o Frame
         addControllerListeners();
     }
 
@@ -40,7 +42,7 @@ public class Frame extends JFrame {
 
     public void setComponents() {
         // Texto de explicação
-        JLabel instructions = new JLabel("<html><font color='blue'>Press 'Space' to generate a random note, 'Esc' to exit, 'Right Arrow' to generate a random note, 'Left Arrow' to generate a random chord.</font></html>", JLabel.CENTER);
+        JLabel instructions = new JLabel("<html><font color='blue'>Press 'Right Arrow' to generate a random note, 'Left Arrow' to generate a random chord and 'Esc' To Exit. </font></html>", JLabel.CENTER);
         instructions.setFont(new Font("Dialog", Font.PLAIN, 14));
         add(instructions, BorderLayout.NORTH);
 
@@ -109,10 +111,12 @@ public class Frame extends JFrame {
             noteBtn.addActionListener(e -> {
                 controller.handleGenerateNoteClick();
                 chordResultLabel.setText(" "); // Limpar o label do acorde
+                requestFocusInWindow(); // Garantir que o frame continue com foco após clicar no botão
             });
             chordBtn.addActionListener(e -> {
                 controller.handleGenerateChordNoteClick();
                 noteResultLabel.setText(" "); // Limpar o label da nota
+                requestFocusInWindow(); // Garantir que o frame continue com foco após clicar no botão
             });
         }
     }
